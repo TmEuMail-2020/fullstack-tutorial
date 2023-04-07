@@ -1,0 +1,5 @@
+tasks:
+  - name: tmy default npm install
+  - init: |
+      cd fina/server
+      npm install 
