@@ -1,5 +1,12 @@
 tasks:
-  - name: tmy default npm install
-  - init: |
+  # https://www.gitpod.io/docs/introduction/getting-started#a-gitpodyml-example
+  - name: tmy default npm instal so to utilize prebuild
+    init: |
       cd final/server
       npm install 
+  - name: start final server
+    command: |
+      cd final/server; npm start
+  - name: start final client (must separate so to have two terminals)
+    command: |
+      cd final/client; npm start
