@@ -4,6 +4,8 @@ tasks:
     init: |
       cd final/server
       npm install 
+      cd final/client
+      npm install
   - name: start final server
     command: |
       cd final/server; npm start
