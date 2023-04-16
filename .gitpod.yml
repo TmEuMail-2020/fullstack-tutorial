@@ -9,3 +9,9 @@ tasks:
   - name: start final client (must separate so to have two terminals)
     command: |
       cd final/client; npm start
+      
+jetbrains:
+  phpstorm:
+    plugins:
+      - com.intellij.lang.jsgraphql
+      - org.sonarlint.idea
